@@ -1,0 +1,103 @@
+/* nasa_main_1024.css */
+/* device 환경 min : 1024px, max : 1439px */
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+  /* headBox 사이즈 조정 */
+  h1{width:10%;}
+
+  .nav{width:85%;}
+
+  #gnb{
+    height:70px;
+    padding-left:0;
+    font-size:36px;}
+
+  #gnb li{
+    line-height:60px;
+    font-size : 1rem;
+  }
+
+  #gnb dt{height:60px;}
+
+  #gnb dd li{
+    height:40px;
+    font-size: 1.3rem;
+  }
+
+  #unb{
+    height:3.8vw;
+  }
+
+  .search_icon{margin-top:0; height:3.125vw;}
+  .shareBox{margin-top:0; height:3.125vw;}
+
+  #viewBox{height:54.640625vw;}
+  #topicBox{height:140vw;}
+  .topic_area{top:10vw;}
+
+  .mouse{display:none;}
+  /* topicBox 슬라이드 가로 사이즈 조정 */
+  .topic_slide_box {
+    width:78.125vw;
+  }
+
+  .topic_slide_box li {
+    width:28.360625vw;
+  }
+
+  /* #programBox 세로 사이즈 조정 */
+  #programBox{
+    height:50vw;
+    padding:50px; 
+  }
+
+  #programBox > h2{
+    font-size:3rem;
+  }
+
+  .program_area{
+    height:25.390625vw;
+  }
+
+  .program_area li{
+    height:100%;
+  }
+  
+  .program_area li > a > span{
+    padding-top:50%;
+    font-size:2rem;
+  }
+
+  /* footBox sns 사이즈 조정*/
+
+  #footBox{
+    height:30.179687vw;
+  }
+
+  .company_plan{
+    width:70.3125vw; 
+  }
+
+  .company_plan li{
+    width:80px;
+    font-size: 0.8rem;
+  }
+
+  .snsBox{
+    float:right;
+    margin-top:1rem;
+    margin-right: 0;
+    width:78.125vw; height:60px;
+  }
+  
+  .snsBox li{
+    width:60px; height:60px;
+  }
+  
+
+
+
+
+
+}

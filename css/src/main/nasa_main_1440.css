@@ -1,0 +1,50 @@
+/* nasa_main_1440.css */
+/* device 환경 min : 1440px, max : 1919px */
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+
+  /* gnb 폰트사이즈 조정하고 싶은데 */
+#gnb dt{
+  font-size:1rem;
+}
+
+  #gnb dd li{
+    font-size: 0.9rem;
+  }
+
+  /* topicBox 슬라이드 가로 사이즈 조정 */
+  .topic_slide_box {
+    width:79.861111vw;
+  }
+
+  /* footBox sns 사이즈 조정*/
+
+  .company_plan{
+    width:58vw; 
+  }
+
+  .company_plan li{
+    float:left;
+    width:6.9444444vw; 
+    margin-right: 5px; 
+    text-align: center; line-height: 80px;
+    font-size: 1rem;
+    font-weight: bold;
+    color:#fff;
+  }
+
+  .snsBox{
+    float:right;
+    margin-right: 1.38888vw;
+    width:18.75vw; height:120px;
+  }
+  
+  .snsBox > ul{
+    width:100%; height:100%;
+  }
+  
+  .snsBox li{
+    width:50px; height:50px;
+  }
+
+}

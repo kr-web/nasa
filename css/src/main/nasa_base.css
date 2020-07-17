@@ -1,0 +1,10 @@
+/* nasa_base.css */
+
+@import url("../main/nasa_main.css");
+
+@import url("../main/nasa_main_320.css");
+@import url("../main/nasa_main_640.css");
+@import url("../main/nasa_main_1024.css");
+@import url("../main/nasa_main_1440.css");
+@import url("../main/nasa_main_1920.css");
+

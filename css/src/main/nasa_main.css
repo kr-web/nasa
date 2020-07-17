@@ -1,0 +1,427 @@
+/* nasa_main.css */
+/* device 1920 기준 */
+
+:root {font-family: '나눔고딕';}
+
+#wrap{
+  width:100%; height: auto;
+}
+
+/* 공통 사항 ========================================== */
+a {display:block; width:100%; height:100%;}
+
+/* #headBox ========================================== */
+#headBox{
+  position: fixed; z-index: 100;
+  width:100%; height:200px;
+  padding:50px; box-sizing: border-box;
+}
+
+h1{
+  float:left;
+  width:7%; height:100px;
+  background-image: url(../../../img/nasa-logo.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.nav{
+  float:right;
+  width:93%; height:100px;
+  padding:10px; box-sizing: border-box;
+}
+  /* ---------- globlal navigation ----------  */
+  #gnb{
+    float:left;
+    width:80%; height:100%;
+    padding-left:100px;
+    box-sizing: border-box;
+    color:#fff;
+  }
+
+    #gnb > ul{
+      width:auto; height:100%;
+    }
+
+    #gnb li {
+      float:left;
+      width:14%; height:100%;
+      margin-right: 8px;
+      line-height: 90px;
+      font-weight: bold;
+      font-size:1.3rem;
+      text-align: center;}
+
+    #gnb li:last-child{margin-right: 0;}
+
+    #gnb dl {width:100%; height:100%;}
+    #gnb dt {width:100%; height:100px;}
+
+    #gnb dt a{position:relative;}
+ 
+    #gnb dt a:after{
+      content:" "; 
+      position:absolute; top:70%; left:0; right:0;
+      width:0; height:2px;
+      margin:auto;
+      background-color:#fff;
+      transition:all 500ms ease;
+    }
+
+    #gnb dt.action a:after{
+      width:90%;
+    }
+
+    #gnb dd {width:100%; height:auto;}
+    #gnb dd > ul{width:100%; height:100%;}
+
+    #gnb dd li{
+      width:100%; height:50px;
+      line-height:50px;
+      font-size: 1.3rem;
+      font-weight: normal;
+      background-color: rgba(25, 65, 137, 0.7);
+    }
+
+    #gnb dd li.action{
+      font-weight: bold;
+      background-color: rgba(67, 80, 103, 0.8);
+    }
+
+    #gnb_mob_area{display:none;}
+  /* ---------- user navigation ----------  */
+  #unb{
+    float:right;
+    margin-top:10px;
+    width:20%; height:70px;
+    padding:5px; box-sizing: border-box;
+  }
+
+    .searchBox{
+      float:left;
+      width:60%; height:100%;
+    }
+
+    .searchBox input{
+      background-color: #333;
+    }
+
+    #search{width:100%; height:100%; font-size:1rem;}
+
+    .search_icon{
+      float:left;
+      margin-top:5px;
+      width:20%; height:50px;
+      background-image: url(../../../img/icons/search.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 60%;
+    }
+
+    .shareBox{
+      float:right;
+      margin-top:5px;
+      width:20%; height:50px;
+      background-image: url(../../../img/icons/share.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 60%;
+    }
+
+/* #viewBox ========================================== */
+#viewBox{
+  position: relative;
+  width:100%; height:1000px;
+  background-image: url(../../../img/main/viewBox/viewBox_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+  
+  .mouse{
+    position: absolute; z-index:100;
+    bottom:1rem; left:50%; transform: translateX(-50%);
+    width: 120px; height: 170px;
+    background-image: url(../../../img/main/viewBox/mouse.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    animation:mvScroll 2s infinite ease alternate;
+  }
+  
+  @keyframes mvScroll {
+    0%{background-position-y: 0;}
+    100%{background-position-y: -3rem;}
+  }
+
+/* #topicBox ========================================== */
+#topicBox{
+  width:100%; height:2180px;
+  background-image: url(../../../img/main/topicBox/topic_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+  .company_title{
+    width:100%; height:800px;
+    padding-top:200px; box-sizing: border-box;
+    color:#fff;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  .company_title > p {
+    width:100%; height:auto;
+    text-align: center;
+  }
+
+  .company_title_p2{font-size:3rem;}
+
+  .topic_area{
+    position: relative;
+    top:30%;
+    width:100%; height:600px;
+  }
+
+    .topic_slide{
+      width:600px; height:600px;
+      background-color: #425067;
+      padding:50px; box-sizing: border-box;
+    }
+
+      .topic_slide > h3{
+        color:#fff;
+        text-shadow: 0.3rem 0.5rem #888;
+        font-weight: bold;
+        font-size: 5rem;
+      }
+
+      .topic_button{
+        margin-top:50px;
+        width: 110px; height:100px;
+      }
+
+        .topic_button > button{
+          width:50px; height:50px;
+          border-radius: 25px;
+          border: 3px solid #fff;
+          background-repeat: no-repeat;
+          background-position: 50% 50% ;
+          background-size: 60%;
+        }
+
+        .next{float:right; background-image: url(../../../img/icons/next.png);}
+        .prev{float:left; background-image: url(../../../img/icons/prev.png);}
+
+    .topic_slide_box{
+      position: absolute; z-index:100;
+      width:1300px; height:400px;
+      bottom:3rem; right:0;
+      overflow: hidden;
+    }
+
+    .topic_slide_box > ul{ width:200%; height:100%;}
+
+    .topic_slide_box li {
+      float:left;
+      margin-right:2%;
+      width:13%; height:390px;
+      background-color: #fff;
+      box-shadow: 0.5rem 0.5rem 0.5rem #333;
+    }
+
+    .topic_slide_box li:last-child{margin-right: 0;}
+
+      .topic_slide_box li > a > img {
+        margin-top:30px;
+        float:right; width:100%; height:220px;
+        background-color: #333;
+      }
+
+      .topic_slide_box li > a > .topic_title{
+        float:left;
+        margin-top: 30px; padding-left:25px;
+        width:100%; height:50px;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .topic_slide_box li > a > .topic_content{
+        float:left;
+        padding-left:25px;
+        width:100%; height:auto;
+        font-size:1rem;
+      }
+
+
+
+/* #infoBox ========================================== */
+#infoBox{
+  width:100%; height:900px;
+  background-color: #0c0628;
+}
+
+  .info_area{
+    position: relative;
+    width:50%; height:600px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .info_area_01{
+    float:left;
+    margin-top:100px;
+    background-image: url(../../../img/main/infoBox/mars.jpg);
+  }
+
+  .info_area_02{
+    float:right;
+    margin-top:200px;
+    background-image: url(../../../img/main/infoBox/64.jpg);
+  }
+
+  .info_area > a:hover{
+    background-color: #333; opacity: 0.7;
+  }
+
+  .info_area > a > span{
+    display:block;
+    padding-top:450px; margin-left:50px;
+    color:#fff;
+    font-weight: bold;
+    font-size:3rem;
+  }
+
+  .info_area > a > .info_title{position:absolute; padding-top: 0;}
+  
+
+/* #programBox ========================================== */
+#programBox{
+  width:100%; height:850px;
+  padding:100px; box-sizing: border-box;
+  background-color: #0c0628;
+}
+
+#programBox > h2{
+  width:100%; height:auto;
+  text-align: center;
+  font-size: 50pt;
+  font-weight: bold;
+  color:#fff;
+}
+
+.program_area{
+  width:90%; height: 500px;
+  margin:auto; margin-top: 50px; 
+}
+
+.program_area > ul{
+  width:100%; height:100%;
+}
+
+.program_area li {
+  float:left; width: 30%; height: 500px;
+  margin-right: 5%; background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.program_area li:nth-child(1){
+  background-image: url(../../../img/main/programBox/media.jpg);
+}
+
+.program_area li:nth-child(2){
+  background-image: url(../../../img/main/programBox/educators.jpg);
+}
+
+.program_area li:nth-child(3){margin-right: 0;
+background-image: url(../../../img/main/programBox/students.jpg);}
+
+.program_area li > a:hover{
+  background-color: #333; opacity: 0.7;
+}
+
+.program_area li > a > span{
+  display:block;
+  width:100%; height:auto;
+  text-align: center;
+  padding-top:230px;
+  color:#fff;
+  font-weight: bold;
+  font-size:3rem;
+}
+
+
+
+/* #footBox ========================================== */
+#footBox{
+  width:100%; height:250px;
+  padding:50px; box-sizing: border-box;
+  background-color: #222;
+}
+
+#footBox > h2{
+  float:left;
+  width:100px; height:100px;
+  background-image: url(../../../img/nasa-logo.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.company_plan{
+  float:left;
+  margin-left:50px;
+  padding:10px; box-sizing: border-box;
+  width:1000px; height:100px;
+}
+
+  .company_plan > ul{width:100%; height:100%;}
+  
+  .company_plan li{
+    float:left;
+    width:100px; height:auto;
+    margin-right: 15px; 
+    text-align: center; line-height: 80px;
+    font-size: 1rem;
+    font-weight: bold;
+    color:#fff;
+  }
+
+  .company_plan li:last-child{margin-right: 0;}
+
+.snsBox{
+  float:right;
+  margin-right: 50px;
+  width:360px; height:120px;
+}
+
+.snsBox > ul{
+  width:100%; height:100%;
+}
+
+.snsBox li{
+  float:left;
+  width:60px; height:60px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 80%;
+}
+
+.snsBox li > a > iframe{
+  margin-top:5px; margin-left:5px;
+}
+
+.snsBox li:nth-child(1){background-image: url(../../../img/logo/facebook_logo.png);}
+.snsBox li:nth-child(2){background-image: url(../../../img/logo/Twitter_Logo_Blue.png); background-size: 100%;}
+.snsBox li:nth-child(3){background-image: url(../../../img/logo/instagram_logo.png);}
+.snsBox li:nth-child(4){background-image: url(../../../img/logo/tumblr_logo.png); background-size: 40%;}
+.snsBox li:nth-child(5){background-image: url(../../../img/logo/TwitchGlitchPurple.png);}
+.snsBox li:nth-child(6){background-image: url(../../../img/logo/persicope_logo.jpg);}
+.snsBox li:nth-child(7){background-image: url(../../../img/logo/Snapchat_logo.png);}
+.snsBox li:nth-child(8){background-image: url(../../../img/logo/LI-In-Bug.png);}
+.snsBox li:nth-child(9){background-image: url(../../../img/logo/flickr_logo.png);}
+.snsBox li:nth-child(10){background-image: url(../../../img/logo/pinterest_logo.png);}
+.snsBox li:nth-child(11){background-image: url(../../../img/logo/giphy_logo.png);}
+.snsBox li:nth-child(12){background-image: url(../../../img/logo/soundcloud_logo.png);}
+
